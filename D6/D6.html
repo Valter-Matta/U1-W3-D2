@@ -340,22 +340,17 @@
           Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
         */
       const cambiaColoreH2 = function () {
-        // Seleziona l'elemento h2 con l'id "changeMyColor"
         const h2 = document.getElementById('changeMyColor')
 
-        // Aggiungi un listener per il click sull'elemento h2
         h2.addEventListener('click', function () {
-          // Genera un colore casuale in formato esadecimale
           const coloreCasuale = `#${Math.floor(
             Math.random() * 16777215
           ).toString(16)}`
 
-          // Cambia il colore del testo dell'h2
           h2.style.color = coloreCasuale
         })
       }
 
-      // Chiama la funzione per inizializzare il comportamento
       cambiaColoreH2()
     </script>
   </body>
