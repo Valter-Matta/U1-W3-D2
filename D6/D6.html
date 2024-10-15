@@ -105,8 +105,10 @@
           */
 
       const changePcontent = function (text) {
-        const editP = document.querySelector('div p')
-        editP.innerText = text
+        const editP = document.querySelectorAll('div p')
+        for (let i = 0; i < editP.length; i++) {
+          editP[i].innerText = text
+        }
       }
       changePcontent('questo è il nuovo contenuto dei P dentro un div')
 
